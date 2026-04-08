@@ -58,7 +58,7 @@ docker compose exec laravel.test php artisan migrate
 - **Database**: [PostgreSQL (Supabase)](https://supabase.com/)
 - **Auth**: [JWT-Auth](https://github.com/php-open-source-saver/jwt-auth)
 - **Containerization**: [Docker Sail](https://laravel.com/docs/11.x/sail)
-- **Cache/Session**: Redis
+- **Cache/Session**: File (Optimized for Windows local/hybrid setups to eliminate Supabase latency)
 
 ---
 
@@ -66,6 +66,8 @@ docker compose exec laravel.test php artisan migrate
 
 - **Local Development**: [http://localhost:8080](http://localhost:8080)
 - **Admin Dashboard**: [http://localhost:8080/admin](http://localhost:8080/admin)
+  - **Default Email**: `admin@odoterp.com`
+  - **Default Password**: `admin`
 - **Mobile/Network Test**: Use your local IP (e.g., `http://172.20.10.14:8080`) from other devices on the same Wi-Fi.
 
 ---
